@@ -11,6 +11,21 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
+
+ 
+<section> 
+<div class="container">
+  
+  <div class="content">
+    <form method="post">
+        <h2>Search</h2>
+        <p><input type="text" name="s" class="text" autofocus autocomplete="off"/></p>
+        <p><button type="submit" class="submit"><?php _e('搜索'); ?></button></p>
+    </form>
+  </div>
+</div>
+</section>
+
 <section class="section">
   <div class="container">
 <?php while($this->next()): ?> 

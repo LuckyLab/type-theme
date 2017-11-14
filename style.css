@@ -2,6 +2,7 @@ abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd
 article,aside,details,figure,footer,header,nav,section,summary{display:block}
 html{box-sizing:border-box}
 *,:after,:before{box-sizing:inherit; outline:0;}
+::selection{background: #2bbc8a; color: #fff;}
 embed,img,object{max-width:100%}
 html{overflow-y:scroll}
 h1 {font-size: 30px;}
@@ -19,7 +20,7 @@ input,select{vertical-align:middle}
 pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}
 input[type=radio]{vertical-align:text-bottom}
 input[type=checkbox]{vertical-align:bottom}
-input,select,textarea{font:99% sans-serif}
+input,select,textarea{font:99% sans-serif; border-radius: 2px; padding-left: 3px; border: 1px solid black;transition:border ease-in-out 0.15s,box-shadow ease-in-out 0.15s;}
 table{font-size:inherit;font:100%}
 small{font-size:85%}
 strong{font-weight:700}
@@ -928,7 +929,7 @@ a.box:active{box-shadow:inset 0 1px 2px rgba(17,17,17,.2),0 0 0 1px #2077b2}
 .nav-center{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:auto;margin-right:auto}
 @media screen and (min-width:769px){.nav-right{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 }
-.nav{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;background-color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;min-height:50px;position:relative;text-align:center;z-index:2}
+.nav{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;background-color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;min-height:50px;position:relative;text-align:left;z-index:2}
 .nav>.container{-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-ms-flexbox;display:flex;min-height:50px;width:100%}
 .nav>.container>.nav-left>.nav-item:first-child:not(.is-tab){padding-left:0}
 .nav>.container>.nav-right>.nav-item:last-child:not(.is-tab){padding-right:0}

@@ -1,0 +1,1 @@
+a slim theme for typecho

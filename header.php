@@ -31,19 +31,19 @@
       <div class="nav-right">
         <nav class="nav-item level is-mobile">
           
-          <a class="level-item" href="https://weibo.com/jsjhlk" target="_blank">
+          <a class="level-item" href="<?php $this->options->weiboUrl() ?>" target="_blank">
             <span class="icon">
               <i class="fa fa-weibo"></i>
             </span>
           </a>
           
-          <a class="level-item" href="https://github.com/luckyscript" target="_blank">
+          <a class="level-item" href="<?php $this->options->githubUrl() ?>" target="_blank">
             <span class="icon">
               <i class="fa fa-github"></i>
             </span>
           </a>
           
-          <a class="level-item" href="/feed/" target="_blank">
+          <a class="level-item" href="<?php $this->options->rssUrl() ?>" target="_blank">
             <span class="icon">
               <i class="fa fa-rss"></i>
             </span>
@@ -54,17 +54,4 @@
       </div>
     </nav>
   </div>
-</section>
-
-<section> 
-<div class="container">
-  
-  <div class="content">
-    <form method="post">
-        <h2>Search</h2>
-        <p><input type="text" name="s" class="text" autofocus autocomplete="off"/></p>
-        <p><button type="submit" class="submit"><?php _e('搜索'); ?></button></p>
-    </form>
-  </div>
-</div>
 </section>

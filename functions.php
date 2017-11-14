@@ -3,7 +3,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO'));
+    $weiboUrl = new Typecho_Widget_Helper_Form_Element_Text('weiboUrl', NULL, NULL, _t('weibo地址'), _t('weibo url'));
+    $githubUrl = new Typecho_Widget_Helper_Form_Element_Text('githubUrl', NULL, NULL, _t('github地址'), _t('github url'));
+    $rssUrl = new Typecho_Widget_Helper_Form_Element_Text('rssUrl', NULL, NULL, _t('rss地址'), _t('rss url'));
+    
     $form->addInput($logoUrl);
+    $form->addInput($weiboUrl);
+    $form->addInput($githubUrl);
+    $form->addInput($rssUrl);
 }
 
 
