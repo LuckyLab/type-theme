@@ -21,7 +21,7 @@
       <div class="" style="flex-direction: row;">
       <h1><a href="<?php $this->options->siteUrl(); ?>index.php"><?php substr($this->options->title(), 2) ?></a> </h1>
         <nav id="nav-menu" class="clearfix" role="navigation" style="text-align: left;">
-          <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>index.php"><?php _e('首页'); ?></a>
+          <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>index.php"><?php _e('index'); ?></a>
           <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
           <?php while($pages->next()): ?>
           <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>

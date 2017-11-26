@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 <section class="section">
   <div class="container">
-    <h1 class="title">404 - <?php _e('页面没找到'); ?></h1>
+    <h1 class="title">404 - <?php _e('Not Found'); ?></h1>
     
   </div>
 </section>

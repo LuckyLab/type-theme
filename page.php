@@ -3,7 +3,6 @@
 <section class="section">
   <div class="container">
     <h1 class="title"><?php $this->title() ?></h1>
-    <h2 class="subtitle is-5">by <?php $this->author(); ?></h2>
     
     <div class="content">
 <?php $this->content(); ?>

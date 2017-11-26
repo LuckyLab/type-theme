@@ -3,7 +3,7 @@
 <section class="section">
   <div class="container">
     <h1 class="title"><?php $this->title() ?></h1>
-    <h2 class="subtitle is-5"><?php $this->date('F j, Y'); ?> by <?php $this->author(); ?></h2>
+    <h2 class="subtitle is-5"><?php $this->date('F j, Y'); ?></h2>
     
     <div class="content">
 <?php $this->content(); ?>

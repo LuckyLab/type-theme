@@ -38,7 +38,7 @@
                     <div class="comment-meta">
                         <span class="comment-author"><?php echo $author; ?></span>
                         <time class="comment-time"><?php $comments->date(); ?></time>
-                        <span class="comment-reply"><?php $comments->reply('回复'); ?></span>
+                        <span class="comment-reply"><?php $comments->reply('reply'); ?></span>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
         <?php if ($this->allow('comment')): ?>
         <div id="<?php $this->respondId(); ?>" class="respond">
             <div class="cancel-comment-reply"><span
-                    class="response"><?php _e('如需评论，请填写表单。'); ?></span><span
+                    class="response"><?php _e('please fill the form'); ?></span><span
                     class="cancel-reply"><?php $comments->cancelReply('取消回复'); ?></span></div>
             <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
                 <?php if ($this->user->hasLogin()): ?>
@@ -81,7 +81,7 @@
 
                 <p style="padding-top:10px;color:#aaa;">
                     <span onClick='showhidediv("author_info")' ;
-style="cursor:pointer;color:#2479cc;"><?php $this->remember('author'); ?></span>，<?php _e('欢迎回来!(点击ID修改)'); ?>
+style="cursor:pointer;color:#2479cc;"><?php $this->remember('author'); ?></span>，<?php _e('Welcome back!'); ?>
                     <span id="cancel-comment-reply"><?php $comments->cancelReply('取消回复'); ?></span>
                 </p>
                 <div id="author_info" style="display:none;">
@@ -102,7 +102,7 @@ style="cursor:pointer;color:#2479cc;"><?php $this->remember('author'); ?></span>
                               placeholder="<?php _e('Type your comment here...'); ?>"
                               required><?php $this->remember('text', false); ?></textarea>
 
-			<p><input type="checkbox" value="9" id="comment-sub" name="comment-sub" required="required" autocomplete="on" required title="发表评论，请先勾选！"> <a style="font-size:14px;color:#ff0000;text-decoration:none;">提交前先勾选</a></font></p>
+			<p><input type="checkbox" value="9" id="comment-sub" name="comment-sub" required="required" autocomplete="on" required title="Mark the checkbox first！"> <a style="font-size:14px;color:#ff0000;text-decoration:none;">Mark the checkbox first</a></font></p>
 
                     <button type="submit" class="submit" id="misubmit"><?php _e('Submit'); ?></button>
                     <?php $security = $this->widget('Widget_Security'); ?>

@@ -19,7 +19,8 @@
 
 <section class="section">
   <div class="container has-text-centered">
-    <p>&copy; <?php echo date('Y'); ?> | powered by <a >Wordpress</a> | <a href="https://github.com/luckyscript" target="_blank">theme slim</a> ♥</p>
+    <p>&copy; <?php echo date('Y'); ?> luckyscript | powered by <a >typecho</a> </p>
+    <p>themed by <a>luckyscript</a> ♥ with all my love</p>
   </div>
 </section>
 <script type="text/javascript" src="<?php $this->options->themeUrl(); ?>js/jquery.min.js"></script>
